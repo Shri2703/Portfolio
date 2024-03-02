@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.home{
+    background-color: #fff;
+    height: 100vh;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+ .navbar .list ul{
+    display: flex;
+
+}
+.list  li {
+    list-style: none;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.list ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.list ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    bottom: -4px; /* Adjust the distance between text and "underline" */
+    background-color: transparent; /* Default color of "underline" */
+    transition: background-color 0.5s ease; /* Smooth transition effect */
+}
+
+.list ul li a:hover::before {
+    background-color: #F4CE14; /* Color of "underline" on hover */
+}
+.textcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myimg {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.myimg img {
+    transition: transform 0.3s ease; /* Adding a smooth transition for animation */
+}
+
+.myimg:hover img {
+    transform: scale(1.1); /* Increasing the scale of the image on hover */
+}
+
+
+.myimg  img{
+    width: 290px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+.aboutme h4{
+    font-size: 1.5rem;
+}
+.aboutme h3{
+    font-size: 1.9rem;
+    margin-top: 10px;
+}
+.aboutme p{
+    font-size: 1.2rem;
+    margin-top: -2px;
+}
+.aboutme button{
+    color: #000;
+    font-size: medium;
+    background-color: #F4CE14;
+    padding: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+
+}
+.icon{
+    padding: 10px;
+
+}
+.list{
+    display: block;
+  }
+.mobilenav {
+    display: none;
+  }
+/* About page css */
+
+.about{
+    background-color:#fff;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.content{
+    padding-left: 20px;
+}
+.content h2{
+    font-size: 2rem;
+}
+.content h4{
+    font-size: 1.6rem;
+}
+.content h5{
+    font-size: 1.1rem;
+}
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+  
+  .color-changing-text {
+    animation: colorChange 5s infinite;
+  }
+
+
+  #codingImage {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+ /* Project CSS */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    height: 29vh;
+}
+
+.project {
+    /*
+    https://i.pinimg.com/originals/20/ae/f2/20aef23d39a8dcb74bf663ed89ab08d6.gif background-image: url(https://static.vecteezy.com/system/resources/previews/006/029/570/non_2x/simple-lamp-background-perfect-for-wallpaper-design-project-vector.jpg); */
+    /* background-image: url(https://i.pinimg.com/originals/c6/77/10/c67710e6738bd447322441c207edc0b3.gif); */
+    border-color: #fff;
+    color: #000;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Adjust height if necessary */
+}
+
+h3 a {
+    text-decoration: none; /* Remove underline */
+    color: #F4CE14; /* Set desired link color */
+}
+
+h3 a:hover {
+    color: #F4CE14; /* Set desired link color on hover */
+}
+
+.project-card p {
+    padding: 5px 0; /* Adjust padding as needed */
+    font-size: 1rem;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Increase gap between cards */
+    padding: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity to your preference */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    color: #000;
+    width: calc(33.33% - 20px); /* Set width for three cards in a line */
+}
+
+/* Adjust width for smaller screens */
+
+
+
+  /* Contact css */
+  .contact{
+    background-image:  url(./Images/contactimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+  }
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+
+.contact-form form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #F4CE14;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #272829;
+    color: #fff;
+}
+
+ /* Add custom styles for arrow buttons */
+.arrow-up, .arrow-down {
+    position: fixed;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-up:hover, .arrow-down:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-down {
+    right: 20px;
+    bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS for the logo image */
+.logo-img {
+    height: 170px;
+    width: 240px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+@media only screen and (max-width: 750px) {
+    /* Hide all CSS for website view */
+    
+    .aboutme button,
+    .arrow-up,
+    .arrow-down{
+        display: none;
+    }
+  
+    
+    .home{
+        height: auto;
+    }
+
+    .lofo{
+        content: -1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    .navbar {
+        flex-direction: column;
+      }
+    
+      .list {
+        display: none; /* Hide the desktop navigation */
+      }
+    
+      .mobilenav {
+        display: block; /* Display the mobile navigation */
+      }
+    
+      .mobilenav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .mobilenav ul li {
+        margin-bottom: 10px;
+      }
+    
+      .mobilenav ul li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 0px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+    .textcontent {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        padding: 10px 10px; 
+        /* Add padding to the sides */
+        /* Center items horizontally */
+    }
+
+    .aboutme h3 {
+        font-size: 1.6rem; /* Decrease font size */
+        margin-bottom: auto; /* Remove bottom margin */
+    }
+
+    .aboutme p {
+        font-size: 1rem; /* Decrease font size */
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .myimg {
+        margin-top: 20px; /* Add space between content */
+        
+        height: auto;
+    }
+    .myimg:hover img {
+        transform: scale(1.1); /* Increasing the scale of the image on hover */
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row; /* Display icons in a row */
+        justify-content: center; /* Center icons horizontally */
+        margin-top: 20px; /* Add space between content */
+    }
+
+    .links .icon {
+        padding: 0 10px; /* Add space between icons */
+    }
+    .about {
+        height: auto; /* Allow content to determine height */
+        padding-top: 0; /* Adjust padding */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .content {
+        padding: 60px 10px 10px 10px; /* Reset padding */
+        text-align: center; /* Center text */
+    }
+
+    .codingimag img {
+        content: url("/Images/fullstackimage.png");
+        width: 100%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        padding: 10px;
+    }
+    .arrow-down {
+        display: none; /* Hide the arrow icon */
+    }
+
+    .project {
+        padding: 10px; /* Reduce padding for better mobile view */
+    }
+
+    .project-cards {
+        flex-direction: column; /* Display project cards in a stacked format */
+    }
+
+    .project-card {
+        height: 40vh;
+        width: 100%; /* Set project card width to full width */
+        margin-bottom: 5px; /* Add some space between project cards */
+    }
+
+    .project-card h2 {
+        font-size: 1.5rem;
+    }
+
+     .pj1 h5 {
+        font-size: 1rem;
+       /* Add space between project title and container h5 */
+    }
+   
+       
+    
+    .project-card .container h4 {
+       display: none;
+        /* Add space between project title and container h5 */
+    }
+   
+     
+
+    .project-card .container h3 a  {
+        display: block; /* Ensure links are displayed as blocks to take full width */
+        margin-top: 5px; /* Add space between container h5 and project link */
+        color: #F4CE14; /* Set link color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .project-card .container .pj1 p {
+        display: none;
+    }
+    .contact {
+        background-image: url(./Images/contactimg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 110vh;
+       
+    }
+}
+
+
+
+
+
