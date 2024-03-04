@@ -430,7 +430,7 @@ footer {
     }
 
     .project-card {
-        height: 32vh;
+        height: 31vh;
         width: 100%; /* Set project card width to full width */
         margin-bottom: 5px; /* Add some space between project cards */
     }
