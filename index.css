@@ -58,11 +58,13 @@
 }
 
 .myimg img {
-    transition: transform 0.3s ease; /* Adding a smooth transition for animation */
+    transition: transform 0.3s ease; 
+    filter: grayscale(1);/* Adding a smooth transition for animation */
 }
 
 .myimg:hover img {
-    transform: scale(1.1); /* Increasing the scale of the image on hover */
+    transform: scale(1.1);
+    filter: grayscale(0); /* Increasing the scale of the image on hover */
 }
 
 
@@ -160,7 +162,7 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
-    height: 29vh;
+    height: 27vh;
 }
 
 .project {
@@ -428,7 +430,7 @@ footer {
     }
 
     .project-card {
-        height: 35vh;
+        height: 32vh;
         width: 100%; /* Set project card width to full width */
         margin-bottom: 5px; /* Add some space between project cards */
     }
