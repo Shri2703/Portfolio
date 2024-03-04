@@ -161,7 +161,7 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: space-between; /* Center the content horizontally */
     height: 27vh;
 }
 
@@ -349,7 +349,15 @@ footer {
         margin: 0;
         padding: 0;
       }
+      .myimg img {
+        transition: transform 0.3s ease; 
+        /* Adding a smooth transition for animation */
+    }
     
+    .myimg:hover img {
+        transform: scale(1.1);
+        /* Increasing the scale of the image on hover */
+    }
       .mobilenav ul li {
         margin-bottom: 10px;
       }
@@ -430,7 +438,7 @@ footer {
     }
 
     .project-card {
-        height: 31vh;
+        height: 27vh;
         width: 100%; /* Set project card width to full width */
         margin-bottom: 5px; /* Add some space between project cards */
     }
@@ -450,7 +458,9 @@ footer {
        display: none;
         /* Add space between project title and container h5 */
     }
-   
+    .container{
+        height: 19vh;
+    }
      
 
     .project-card .container h3 a  {
