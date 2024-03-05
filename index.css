@@ -59,12 +59,12 @@
 
 .myimg img {
     transition: transform 0.3s ease; 
-    ;/* Adding a smooth transition for animation */
+    /* Adding a smooth transition for animation */
 }
 
 .myimg:hover img {
     transform: scale(1.1);
-   ; /* Increasing the scale of the image on hover */
+    /* Increasing the scale of the image on hover */
 }
 
 
@@ -351,11 +351,13 @@ footer {
       }
       .myimg img {
         transition: transform 0.3s ease; 
+        filter: grayscale(1);
         /* Adding a smooth transition for animation */
     }
     
     .myimg:hover img {
         transform: scale(1.1);
+        filter: grayscale(0);
         /* Increasing the scale of the image on hover */
     }
       .mobilenav ul li {
@@ -482,8 +484,3 @@ footer {
        
     }
 }
-
-
-
-
-
