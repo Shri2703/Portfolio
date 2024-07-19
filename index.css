@@ -29,7 +29,7 @@
 .list ul li a {
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: #495057;
 }
 
 .list ul li a::before {
@@ -75,17 +75,26 @@
     border-radius: 50%;
 }
 
-
+#about{
+    background-color: #edf2fb;
+}
 .aboutme h4{
     font-size: 1.5rem;
+}
+.aboutme h2{
+    font-size: 1.9rem;
+    margin-top: 10px;
+    color: #000;
 }
 .aboutme h3{
     font-size: 1.9rem;
     margin-top: 10px;
+    color: #343a40;
 }
 .aboutme p{
     font-size: 1.2rem;
     margin-top: -2px;
+    color: #495057;
 }
 .aboutme button{
     color: #000;
@@ -137,6 +146,7 @@
 }
 .content h5{
     font-size: 1.1rem;
+    color: #495057;
 }
 @keyframes colorChange {
     0% { color: red; }
@@ -174,6 +184,7 @@
     padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
+    
     /* Adjust height if necessary */
 }
 
@@ -188,7 +199,7 @@ h3 a:hover {
 
 .project-card p {
     padding: 5px 0; /* Adjust padding as needed */
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5; /* Adjust line height for better readability */
 }
 
@@ -203,14 +214,23 @@ h3 a:hover {
 .project-card {
     background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity to your preference */
     backdrop-filter: blur(10px); /* Apply the blur effect */
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     color: #000;
     width: calc(33.33% - 20px); /* Set width for three cards in a line */
 }
+.project-card .container h5,h4 {
+    color: #343a40;
 
+}
+.project-card .container p {
+    color: #495057;
+}
+.tscontent{
+    color: #495057;
+}
 /* Adjust width for smaller screens */
 
 
