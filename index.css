@@ -329,7 +329,7 @@ footer {
     cursor: pointer;
     padding-left: 40px;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     /* Hide all CSS for website view */
     
     .aboutme button,
@@ -442,7 +442,7 @@ footer {
     }
 
     .codingimag img {
-        content: url("/Images/fullstackimage.png");
+        content: url("./Images/aboutimg.png");
         width: 100%; /* Adjust width as needed */
         height: auto; /* Maintain aspect ratio */
         padding: 10px;
