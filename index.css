@@ -78,6 +78,9 @@
 #about{
     background-color: #edf2fb;
 }
+.aboutme{
+    padding-left: 30px;
+}
 .aboutme h4{
     font-size: 1.5rem;
 }
@@ -166,6 +169,65 @@
     height: auto;
     transition: opacity 1s ease-in-out;
 }
+
+/* skills */
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+
+/* SKILLS Section */
+.skills {
+    padding: 60px 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skills-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-icons i {
+    font-size: 3rem; /* Adjust the size as needed */
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skills-icons i:hover {
+    transform: scale(1.1);
+    color: #F4CE14; /* Change color on hover */
+}
+
+.arrow-down {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    margin-top: 20px;
+}
+
+.arrow-down:hover {
+    color: #666;
+}
+
+
  /* Project CSS */
 
 .container {
@@ -184,6 +246,7 @@
     padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #edf2fb;
     
     /* Adjust height if necessary */
 }
@@ -221,6 +284,9 @@ h3 a:hover {
     color: #000;
     width: calc(33.33% - 20px); /* Set width for three cards in a line */
 }
+.project-card:hover {
+    transform: scale(1.05);
+}
 .project-card .container h5,h4 {
     color: #343a40;
 
@@ -232,7 +298,46 @@ h3 a:hover {
     color: #495057;
 }
 /* Adjust width for smaller screens */
+/* Achievements Section */
+/* Achievements Section */
+.achievements {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
 
+.achievements h2 {
+    margin-bottom: 20px;
+}
+
+.achievements-marquee {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievement-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.achievement-badge img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.achievement-badge p {
+    font-size: 14px;
+    color: #333;
+}
 
 
   /* Contact css */
